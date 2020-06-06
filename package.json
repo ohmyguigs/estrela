@@ -42,6 +42,13 @@
   },
   "jest": {
     "preset": "react-native",
+    "setupFiles": [
+      "./node_modules/react-native-gesture-handler/jestSetup.js",
+      "./jest/jest.setup.js"
+    ],
+    "transformIgnorePatterns": [
+      "/node_modules/(?!native-base)/"
+    ],
     "moduleFileExtensions": [
       "ts",
       "tsx",
@@ -49,7 +56,7 @@
     ],
     "transform": {
       "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest",
-      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+      "\\.(ts|tsx)$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
     "testPathIgnorePatterns": [

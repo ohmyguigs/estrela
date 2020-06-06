@@ -3,7 +3,7 @@ import * as React from 'react';
 import { Text, View } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import { ColorPallete } from './Styles';
+import { Colors } from './Styles';
 
 const NAVIGATION_ICONS_SIZE = 22;
 
@@ -36,9 +36,9 @@ const BottomTabNavigator = () => {
       labeled
       shifting={false}
       initialRouteName="Loops"
-      activeColor={ColorPallete.KeyLime}
-      inactiveColor={ColorPallete.LavenderFloral}
-      barStyle={{ backgroundColor: ColorPallete.DarkSlateBlue }}>
+      activeColor={Colors.KeyLime}
+      inactiveColor={Colors.LavenderFloral}
+      barStyle={{ backgroundColor: Colors.DarkSlateBlue }}>
       <Tab.Screen
         name="Loops"
         options={{

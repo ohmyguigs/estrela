@@ -1,4 +1,4 @@
-export const ColorPallete = {
+export const Colors = {
   KeyLime: '#EDF67D',
   OrchidCrayola: '#F896D8',
   LavenderFloral: '#B56BF0',
