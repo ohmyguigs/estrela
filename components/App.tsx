@@ -7,17 +7,11 @@
  */
 
 import React from 'react';
-import { View } from 'react-native';
-import BottomTabNavigator from './components/BottomTabNavigator';
+import BottomTabNavigator from './BottomTabNavigator';
+// This basically a router
 
 const App: () => React.ReactNode = () => {
-  return (
-    <>
-      <View>
-        <BottomTabNavigator />
-      </View>
-    </>
-  );
+  return <BottomTabNavigator />;
 };
 
 export default App;
